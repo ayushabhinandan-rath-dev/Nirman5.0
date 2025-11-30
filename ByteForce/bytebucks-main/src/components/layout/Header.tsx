@@ -19,6 +19,8 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { ModeToggle } from './ThemeToggle';
+
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -98,6 +100,7 @@ export function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-2">
+            <ModeToggle />
             {/* Mobile Search Toggle */}
             <Button
               variant="ghost"

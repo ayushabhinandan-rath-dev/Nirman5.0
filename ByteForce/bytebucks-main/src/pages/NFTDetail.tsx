@@ -13,6 +13,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { useCart } from '@/hooks/useCart';
 import { useNFT } from '@/hooks/useNFTs';
 import { toast } from '@/hooks/use-toast';
+import { ReportButton } from '@/components/nft/ReportButton';
 
 const blockchainConfig: Record<string, { symbol: string; color: string; name: string }> = {
   ethereum: { symbol: 'ETH', color: '#627EEA', name: 'Ethereum' },
@@ -195,6 +196,7 @@ const NFTDetail = () => {
                       <Tag className="w-5 h-5 mr-2" />
                       Make Offer
                     </Button>
+                    {id && <ReportButton nftId={id} />}
                   </div>
                 </CardContent>
               </Card>

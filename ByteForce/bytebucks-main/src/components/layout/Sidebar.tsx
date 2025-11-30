@@ -13,7 +13,8 @@ import {
     Zap, 
     Activity, 
     User, 
-    Settings 
+    Settings,
+    Info
 } from 'lucide-react';
 
 const navItems = [
@@ -26,6 +27,7 @@ const navItems = [
     { href: '/activity', label: 'Activity', icon: Activity },
     { href: '/profile', label: 'Profile', icon: User },
     { href: '/settings', label: 'Settings', icon: Settings },
+    { href: '/about', label: 'About Us', icon: Info },
 ];
 
 function NavLink({ href, label, icon: Icon, onClick }: (typeof navItems)[0] & { onClick: () => void }) {
